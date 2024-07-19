@@ -1,0 +1,114 @@
+.all{
+    margin-bottom: 50px;
+}
+
+.all-layout{
+    grid-template-columns: .5fr 1.5fr .7fr .7fr 1.5fr .7fr .4fr .7fr;
+    display: grid;
+    padding: 15px 20px;
+    align-items: center;
+    border-bottom: 1px solid #3c3c3c;
+}
+
+.all-table{
+    max-width:1160px;
+    width: 85%;
+}
+
+.all-layout:last-child {
+    border: none;
+}
+
+.all-layout div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.all-layout div img {
+    width: 35px;
+}
+
+.all-layout .green {
+    color: #00D515;
+    text-align: center;
+}
+
+.all-layout .red {
+    color: #ff4646;
+    text-align: center;
+}
+
+.market-cap-all{
+    text-align: center;
+}
+
+.all .last{
+    text-align: right;
+}
+
+.all .ath{
+    text-align: center;
+}
+
+.all h1{
+    text-align: center;
+    margin: 80px 0;
+    font-size: max(3vw, 36px);
+}
+
+.all h1 em{
+    font-size: max(3.2vw, 40px);
+    text-decoration: underline;
+}
+
+@media (max-width: 910px){
+    .all-table{
+        width: 98%;
+    }
+    .all-layout{
+        grid-template-columns: .2fr 1.2fr .6fr .4fr 1fr .7fr .4fr .7fr;
+    }
+}
+
+@media (max-width: 780px) {
+    .all-layout {
+            grid-template-columns: .2fr 1.2fr .6fr .4fr .7fr .4fr .7fr;
+        }
+    .market-cap-all {
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    .all h1 {
+        margin: 50px 0;
+    }
+
+    .all-layout div img {
+        display: none;
+    }
+
+    .all-layout {
+        font-size: 13px;
+        padding: 10px 11px;
+    }
+    
+    .hero form input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 330px) {
+    .all-layout {
+            grid-template-columns: .2fr 1fr .6fr .5fr .5fr ;
+            font-size: 11px;
+            gap: 2px;
+        }
+    .ath-pr{
+        display: none;
+    }
+    .last{
+        display: none;
+    }
+}

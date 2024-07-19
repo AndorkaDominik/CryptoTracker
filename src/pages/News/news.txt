@@ -1,0 +1,39 @@
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+
+const News = () => {
+  const [news, setNews] = useState([]);
+
+  useEffect(() => {
+    const fetchNews = async () => {
+      try {
+        const response = await axios.get('https://cryptopanic.com/api/v1/posts/?auth_token=6f0e5e316417e684b16d8ca0ffd6a30542de8e14&filter=rising&public=false');
+        setNews(response.data.results);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchNews();
+  }, []);
+
+  return (
+    <div className="news">
+      <h1>Crypto News</h1>
+      {news.map(article => (
+        <div key={article.id} className="news-item">
+          <h2><a href={article.url} target="_blank" rel="noopener noreferrer">{article.title}</a></h2>
+          <p><strong>Source:</strong> {article.source.title}</p>
+          <p><strong>Published:</strong> {new Date(article.published_at).toLocaleString()}</p>
+          <p><strong>Domain:</strong> {article.domain}</p>
+          <p><strong>Positive Votes:</strong> {article.votes.positive}</p>
+          <p><strong>Negative Votes:</strong> {article.votes.negative}</p>
+          <p><strong>Comments:</strong> {article.votes.comments}</p>
+          <p><strong>Currencies:</strong> {article.currencies.map(currency => currency.title).join(', ')}</p>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default News;

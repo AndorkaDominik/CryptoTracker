@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    padding: 0;margin: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 span {
+    background: -webkit-linear-gradient(rgb(113, 47, 255), rgb(105, 2, 153), #00bbf4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.green {
+    color: #00D515;
+}
+
+.red {
+    color: #ff4646;
+}
+
+.app{
+    min-height: 100vh;
+    color: white;
+    background: linear-gradient(
+        #0b004e,
+        #1d152f,
+        #002834
+    );
+}

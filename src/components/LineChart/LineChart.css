@@ -1,0 +1,26 @@
+.coin-chart rect{
+    fill: transparent;
+}
+
+.coin-chart text {
+    fill: white;
+}
+
+.coin-chart g rect{
+        fill: white;
+}
+
+.coin-chart path{
+    stroke: rgb(81, 255, 0);
+}
+
+.google-visualization-tooltip path{
+    fill: black;
+}
+
+circle{
+    /* fill: rgb(163, 43, 227); */
+    fill: #f7931a;
+    /* stroke: rgb(163, 43, 227); */
+    stroke: black;
+}

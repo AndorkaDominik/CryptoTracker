@@ -1,0 +1,21 @@
+COINGECKO
+https://www.coingecko.com/en/developers/dashboard
+
+googleel
+
+mainkey
+
+CG-c2BZnVNH6hFmhiEGiVXvU5af
+
+
+https://www.react-google-charts.com/examples/line-chart
+
+https://docs.coingecko.com/v3.0.1/reference/coins-id
+
+
+CRYPTO PANIC API
+6f0e5e316417e684b16d8ca0ffd6a30542de8e14
+
+
+Icon
+https://icon-icons.com/icon/icn-crypto-cryptocurrency-cryptocurrencies-cash-money-bank-payment/95869
