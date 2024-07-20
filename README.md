@@ -49,8 +49,11 @@ One of the key features of CryptoTracker is the ability for users to switch betw
 - Components that display price or market data (e.g., `Home`, `CoinDetails`, `TrendingCoins`) consume the `CoinContext` to get the current currency and update their data accordingly.
 - The `useEffect` hooks in various components trigger data fetching or re-rendering when the selected currency changes, ensuring all displayed data is current.
 
+<div align="center">
+    
 ![Currency Screenshot](./.github/currency.png)
 
+</div>
 
 ## Pages
 
