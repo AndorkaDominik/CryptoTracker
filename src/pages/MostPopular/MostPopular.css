@@ -47,6 +47,15 @@
     margin: 10px 0;
 }
 
+@media (max-width: 550px) {
+    .trending-coins {
+        margin: 40px auto;
+    }
+    .trending-coins h1{
+        margin-bottom: 40px;
+    }
+}
+
 @media screen and (max-width: 300px) {
     .trending-coins {
             padding: 0;

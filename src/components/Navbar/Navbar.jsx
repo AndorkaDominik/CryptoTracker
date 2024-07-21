@@ -15,6 +15,10 @@ const Navbar = () => {
         setIsNavOpen(!isNavOpen);
     };
 
+    const closeNavbar = () => {
+        setIsNavOpen(false);
+    };
+
     const currencyHandler = (e) => {
         switch (e.target.value) {
             case "usd":
@@ -41,12 +45,12 @@ const Navbar = () => {
             {!isNavOpen && <FaBars className="menu-btn" onClick={showNavbar} />}
             {isNavOpen && <FaTimes className="menu-btn" onClick={showNavbar} />}
                 <ul className={isNavOpen ? 'show' : ''} ref={navRef}>
-                    <Link to={"/"}><li>Home</li></Link>
-                    <Link to={"/MostPopular"}><li>Trending</li></Link>
-                    <Link to={"/AllCoins/"}><li>Explore</li></Link>
-                    <Link to={"/News/"}><li>News</li></Link>
+                    <Link to={"/"} onClick={closeNavbar}><li>Home</li></Link>
+                    <Link to={"/MostPopular"} onClick={closeNavbar}><li>Trending</li></Link>
+                    <Link to={"/AllCoins/"} onClick={closeNavbar}><li>Explore</li></Link>
+                    <Link to={"/News/"} onClick={closeNavbar}><li>News</li></Link>
                     <div className="under768px">
-                    <Link to={"/News/"}><p>Learn more <img src={arrow} alt="" /></p></Link>
+                    <Link to={"/News/"} onClick={closeNavbar}><p>Learn more <img src={arrow} alt="" /></p></Link>
                     <select onChange={currencyHandler}>
                         <option value="usd">usd</option>
                         <option value="eur">eur</option>

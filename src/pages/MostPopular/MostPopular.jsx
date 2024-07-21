@@ -19,7 +19,7 @@ const TrendingCoins = () => {
 
   return (
     <div className='trending-coins'>
-      <h1>Top <span>Trending Cryptos</span>  of the Moment</h1>
+      <h1>Top <span>Trending Cryptos</span> <br />  of the Moment</h1>
       <div className='coins-list'>
         {trendingCoins.map(coin => (
           <Link to={`/coin/${coin.id}`} key={coin.id} className='coin-card'>

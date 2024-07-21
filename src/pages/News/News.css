@@ -9,6 +9,7 @@
 .news h1 {
     font-size: max(4vw, 36px);
     text-align: center;
+    margin-bottom: 80px;
 }
 .news .blog-container{
     cursor: pointer;
@@ -65,7 +66,11 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
+@media screen and (max-width:550px) {
+    .news h1 {
+        margin-bottom: 40px;
+    }
+}
 @media screen and (max-width:450px) {
     .news .blog-container {
         grid-template-columns: 1fr;

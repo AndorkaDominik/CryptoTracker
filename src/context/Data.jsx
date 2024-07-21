@@ -1,6 +1,6 @@
 export const blogPosts = [
     {
-        img: "https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/advisor/in/wp-content/uploads/2022/10/pexels-alesia-kozik-6765363-scaled.jpg",
+        img: "https://fintechzone.hu/wp-content/uploads/2024/04/bitcoin-felezes.webp",
         title: "Just in: Bitcoin just broke another world record!",
         author: "Andorka Dominik",
         published: "2024.07.18",

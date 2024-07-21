@@ -21,8 +21,8 @@ const All = () => {
             <p>Price</p>
             <p style={{textAlign: "center"}}>24H Change</p>
             <p className='market-cap-all'>Market Cap</p>
-            <p className='ath ath-pr'>ATH</p>
-            <p className='ath'>ATH Change %</p>
+            <p className='ath'>ATH</p>
+            <p className='ath ath-pr'>ATH Change %</p>
             <p className='last'>Last Updated</p>
             </div>
             {
@@ -38,8 +38,8 @@ const All = () => {
                         {Math.floor(item.price_change_percentage_24h*100)/100}
                     </p>
                     <p className='market-cap-all'>{item.market_cap.toLocaleString()} {currency.symbol}</p>
-                    <p className='ath ath-pr'>{item.ath.toLocaleString()} {currency.symbol}</p>
-                    <p className={item.ath_change_percentage>0 ? "green ath" : "red ath"}>
+                    <p className='ath'>{item.ath.toLocaleString()} {currency.symbol}</p>
+                    <p className={item.ath_change_percentage>0 ? "green ath ath-pr" : "red ath ath-pr"}>
                         {Math.floor(item.ath_change_percentage*100)/100}
                     </p>
                     <p className='last'>{item.last_updated.toLocaleString().slice(0, 10)}</p>
