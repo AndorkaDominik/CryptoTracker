@@ -6,7 +6,7 @@ CryptoTracker is a comprehensive cryptocurrency tracking application that allows
 
 <h3 align="center">
     <strong>
-      <code>&nbsp;<a href="https://andorkadominik.github.io/CryptoTracker/" target="_blank">Access Here</a>&nbsp;</code>
+      <code>&nbsp;<a href="https://andorkadominik.github.io/CryptoTracker/">Access Here</a>&nbsp;</code>
     </strong>
 </h3>
 
