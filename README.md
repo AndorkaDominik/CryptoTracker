@@ -92,7 +92,7 @@ The Explore page lists all available cryptocurrencies. Users can see detailed in
 
 ### Coin Details
 
-The Coin Details page provides detailed information about a specific cryptocurrency, including its description, current price, market cap, 24-hour high and low prices, and a historical price chart.
+The Coin Details page provides detailed information about a specific cryptocurrency, including its description, current price, market cap, 24-hour high and low prices, and a historical price chart for the last 7 days or more.
 
 **Features:**
 - **Coin Overview**: Displays the coin’s image, name, and symbol.
