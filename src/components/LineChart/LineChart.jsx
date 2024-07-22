@@ -15,7 +15,6 @@ const LineChart = ({historicalData}) => {
                 dataCopy.push([formattedDate, item[1]]);
             })
             setData(dataCopy)
-            console.log(dataCopy)
         }
     }, [historicalData])
 
