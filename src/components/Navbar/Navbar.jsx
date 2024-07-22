@@ -64,7 +64,7 @@ const Navbar = () => {
                         <option value="eur">eur</option>
                         <option value="huf">huf</option>
                     </select>
-                    <Link to={"/News/"}><p>Learn more <img src={arrow} alt="" /></p></Link>
+                    <Link to={"/News/"}><p>Learn{String.fromCharCode(160)}more <img src={arrow} alt="" /></p></Link>
                 </div>
                 
         </div>
