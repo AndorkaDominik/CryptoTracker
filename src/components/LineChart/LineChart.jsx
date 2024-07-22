@@ -9,11 +9,13 @@ const LineChart = ({historicalData}) => {
         let dataCopy = [["Date", "Prices($)"]];
         if(historicalData.prices){
             historicalData.prices.map((item) =>{
-                dataCopy.push([`
-                    ${new Date(item[0]).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
-                `, item[1]])
+                const formattedDate = new Date(item[0])
+                .toLocaleDateString('en-US', {month: 'short', day: 'numeric' })
+                .trim();
+                dataCopy.push([formattedDate, item[1]]);
             })
             setData(dataCopy)
+            console.log(dataCopy)
         }
     }, [historicalData])
 
@@ -21,6 +23,11 @@ const LineChart = ({historicalData}) => {
     <Chart 
         className='chart'
         chartType='LineChart'
+        options={{
+        hAxis: { title: 'Date' },
+        vAxis: { title: 'Price ($)' },
+        legend: { position: 'bottom' }
+      }}
         data={data}
         height="100%"
         width="100%"
